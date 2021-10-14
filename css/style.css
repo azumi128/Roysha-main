@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body {
+  color: #6c6c6f;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* 画像の縦横比が崩れるのを防いでくれる。 */
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  padding: 30px 0;
+  background-color: #123d88;
+}
+
+h1 {
+  line-height: 1;
+}
+
+/* main */
+/* outline */
+.outline-notes {
+  margin-bottom: 18px;
+  color: #256be6;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; /* 文字を常に大文字にする */
+}
+
+.outline-title {
+  margin-bottom: 40px;
+  color: #262934;
+  font-size: 36px;
+  font-weight: bold; /* 見出しではない可能性もあるため、どの要素で囲っても常に太字になるようにつけておくのが良い。 */
+  line-height: 1.3;
+}
+
+/* 基本的に要素セレクタを使用してはいけないが、pに関しては、急にpがliに変わったり、h2に変わったりはしないので、使っても良い。(outline-textというふうに、クラス名をつけても良い。) */
+.outline p {
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  padding: 30px 0;
+  background-color: #123d88;
+  text-align: right;
+}
+
+/* 本来は、small要素にCSSはつけてはいけない！ */
+small {
+  color: #fff;
+  font-size: 15px;
+}
